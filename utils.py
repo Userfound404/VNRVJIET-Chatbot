@@ -6,7 +6,7 @@ import streamlit as st
 openai.api_key= st.secrets["openai_key"]
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-pinecone.init(api_key='8d89e5bd-f6d5-4c2f-bcab-8ba41b6f96f1', environment='asia-northeast1-gcp')
+pinecone.init(api_key=st.secrets["pinecone_key"], environment=st.secrets["pinecone_env"])
 index = pinecone.Index('langchain-chatbot')
 
 

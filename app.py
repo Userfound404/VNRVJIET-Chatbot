@@ -13,7 +13,7 @@ from utils import *
 
 
 if 'responses' not in st.session_state:
-    st.session_state['responses'] = ["How can I assist you?"]
+    st.session_state['responses'] = ["Have a doubt regarding VNRVJIET, ask me"]
 
 if 'requests' not in st.session_state:
     st.session_state['requests'] = []

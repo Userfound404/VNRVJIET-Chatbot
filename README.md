@@ -3,6 +3,7 @@
 **This chatbot answers queries related to VNRVJIET, it was built using Pinecone Vector Database, GPT 3.5 and Langchain**
 
 ### Live-Link - [app](https://askvnrvjiet.streamlit.app/)
+### blog - [here](https://medium.com/@swheatdreamz/how-chatgpt-took-chatbots-to-a-new-realm-28e0c7459502)
 
 ### How to Use
 simply head over to the app, and start chatting. it will answer questions that it was trained on.
@@ -31,3 +32,11 @@ Clone this repository using the following command:
 
   
 **make sure to update your API keys in `utils.py` and `app.py`**
+
+### Working
+![image](https://github.com/Userfound404/VNRVJIET-Chatbot/assets/97509220/b35edb6f-7f5d-4011-b486-075fd1ecc2cc)
+
+The image above show exactly how our application can be created. We divide our data into chunks and utilise text embedding to store distinct vectors in a database. Now, whenever a user enters a query, the text embedding is used to retrieve the closest datapoint. Our LLM specialises in comprehending context, including earlier conversations. The model then returns the relevant database answer.
+Remember we're not exactly changing the architecture of the model for fine-tuning but are leveraging the contextual understanding of the LLM.
+
+read more in my blog.

@@ -11,7 +11,7 @@ import streamlit as st
 from streamlit_chat import message
 from utils import *
 
-
+st.title('VNRVJIET Chatbot(beta)')
 if 'responses' not in st.session_state:
     st.session_state['responses'] = ["Have a doubt regarding VNRVJIET, ask me"]
 
